@@ -6,7 +6,7 @@
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
 http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
 	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="8c835071-f5a5-49ae-9730-fd4629c11a0b" >
-		<http:listener-connection host="0.0.0.0" port="8081" />
+		<http:listener-connection host="0.0.0.0" port="8084" />
 	</http:listener-config>
 	<flow name="sonarqube-configFlow" doc:id="c65fecfe-6a4c-4b3c-b737-aa2353ab363e" >
 		<http:listener doc:name="Listener" doc:id="8bbe5bae-f307-4251-a6c1-a83d5a75fb2d" config-ref="HTTP_Listener_config" path="/test"/>
