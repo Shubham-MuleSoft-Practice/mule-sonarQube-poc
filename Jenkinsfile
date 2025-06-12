@@ -32,7 +32,7 @@ pipeline {
 
         stage('Deploy CloudHub 2.0') {
             steps {
-                bat 'mvn clean deploy'
+                bat 'mvn clean deploy -DmuleDeploy'
             }
         }
     }
