@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>3086d252-137a-464e-a9cf-b262aecf2f8b</groupId>
-	<artifactId>sonarqube-config</artifactId>
+	<artifactId>sonarqube-config-001</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>mule-application</packaging>
 
@@ -46,7 +46,7 @@
 						<username>shub-123</username>
 						<password>Shubh@123</password>
 						<muleVersion>4.9.0</muleVersion>
-						<applicationName>mule-sonarqube-demo</applicationName>
+						<applicationName>mule-sonarqube-test</applicationName>
 						<replicas>1</replicas>
 						<vCores>0.1</vCores>
 					</cloudhub2Deployment>
