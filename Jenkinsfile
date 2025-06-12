@@ -21,10 +21,10 @@ pipeline {
                 echo '***** Check SonarQube analysis *****'
                 bat """
                     mvn clean verify sonar:sonar ^
-                    -Dsonar.projectKey=mule-test-01 ^
-                    -Dsonar.projectName=mule-test-01 ^
-                    -Dsonar.host.url=http://192.168.1.147:9000 ^
-                    -Dsonar.token=sqp_9e7f6a4105876055fbafe351575b3aedb5d08e86 ^
+                    -Dsonar.projectKey=Shubham-MuleSoft-Practice_mule-sonarQube-poc ^
+                    -Dsonar.projectName=mule-sonarQube-poc ^
+                    -Dsonar.host.url=https://sonarcloud.io ^
+                    -Dsonar.token=428647a94ab058d3aa1d495d5c82f511c5a52a48 ^
                     -Dsonar.java.binaries=target\\classes
                 """
             }
