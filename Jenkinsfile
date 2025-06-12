@@ -37,7 +37,9 @@ pipeline {
             steps {
                echo '***** Deploy to cloudHub2.0 *****'
 			   configFileProvider([configFile(fileId: 'maven-settings', variable: 'MAVEN_SETTINGS_FILE')]) {
-                    bat "mvn clean deploy -DmuleDeploy -s %MAVEN_SETTINGS_FILE%"
+                    bat """
+                        mvn clean deploy -DmuleDeploy -s %MAVEN_SETTINGS_FILE%
+                    """
                 }
             }
         }
