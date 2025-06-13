@@ -21,5 +21,18 @@ output application/json
 }]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
+		<flow-ref doc:name="Flow Reference" doc:id="d81c832e-895d-46d2-a3ba-dc97692aea5f" name="sonarqube-configSub_Flow"/>
 	</flow>
+	<sub-flow name="sonarqube-configSub_Flow" doc:id="086bd74a-4b27-40a9-8b3a-a9dbf1d77180" >
+		<ee:transform doc:name="Transform Message" doc:id="6db249d8-dfb7-47bb-bb80-b7e38ace2b3b" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+{
+	"message": "Run Munit test 1"
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</sub-flow>
 </mule>

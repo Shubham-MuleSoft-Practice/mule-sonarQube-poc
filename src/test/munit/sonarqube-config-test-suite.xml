@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:munit="http://www.mulesoft.org/schema/mule/munit" xmlns:munit-tools="http://www.mulesoft.org/schema/mule/munit-tools"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xsi:schemaLocation="
+		http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+		http://www.mulesoft.org/schema/mule/munit http://www.mulesoft.org/schema/mule/munit/current/mule-munit.xsd
+		http://www.mulesoft.org/schema/mule/munit-tools  http://www.mulesoft.org/schema/mule/munit-tools/current/mule-munit-tools.xsd">
+	<munit:config name="sonarqube-config-test-suite.xml" />
+	<munit:test name="sonarqube-config-test-suite-sonarqube-configSub_FlowTest" doc:id="d7944ed9-a2c5-4cba-8dc6-6f49276771ff" description="Test">
+		<munit:execution >
+			<flow-ref doc:name="Flow-ref to sonarqube-configSub_Flow" doc:id="d1832cc1-0f11-4f02-bc39-524d902c1ae7" name="sonarqube-configSub_Flow"/>
+		</munit:execution>
+		<munit:validation >
+			<logger level="INFO" doc:name="Logger" doc:id="c290fae7-6792-44be-a8f5-7152c2e6e86b" message="#[payload]"/>
+			<munit-tools:assert doc:name="Assert expression" doc:id="3bda1310-35d7-4e61-a911-531a47eb3976" />
+		</munit:validation>
+	</munit:test>
+
+
+</mule>
