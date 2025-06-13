@@ -67,7 +67,7 @@
 				</executions>
 				<configuration>
 					<serverId>shubham-nexus</serverId>
-					<nexusUrl>http://192.168.1.147:8081/</nexusUrl>
+					<nexusUrl>http://192.168.1.103:8081/</nexusUrl>
 					<skipStaging>true</skipStaging>
 				</configuration>
 			</plugin>
@@ -104,11 +104,11 @@
 	<distributionManagement>
 		<snapshotRepository>
 			<id>shubham-nexus</id>
-			<url>http://192.168.1.147:8081/repository/maven-snapshots/</url>
+			<url>http://192.168.1.103:8081/repository/maven-snapshots/</url>
 		</snapshotRepository>
 		<repository>
 			<id>shubham-nexus</id>
-			<url>http://192.168.1.147:8081/repository/maven-releases/</url>
+			<url>http://192.168.1.103:8081/repository/maven-releases/</url>
 		</repository>
 	</distributionManagement>
 
@@ -162,7 +162,7 @@
 		</repository>
 		<repository>
 			<id>maven-group</id>
-			<url>http://192.168.1.147:8081/repository/maven-group/</url>
+			<url>http://192.168.1.103:8081/repository/maven-group/</url>
 		</repository>
 	</repositories>
 
